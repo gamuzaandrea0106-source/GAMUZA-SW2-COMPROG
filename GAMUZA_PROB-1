@@ -1,0 +1,44 @@
+#include <iostream>
+using namespace std;
+
+int main ()
+{
+    int no;
+    
+    cout << "Please Enter a Number: ";
+    cin >> no;
+    
+    if (no > 9999 || no < -9999) {
+        cout << "Invalid Input: Numbers with 4 Digits are Only Allowed.\n" << "Please Try Again.";
+        return 0;
+    }
+
+    if (no > 0) {
+        cout << "The Number is Positive \n";
+    }
+    else if (no <= 0) {
+        cout << "It is a Non-Positive Number \n";
+    }
+
+    if (no < 0) {
+        no = -no;
+    }
+    else if (no > 0) {
+        no = no;
+    }
+
+    if (no < 10) {
+        cout << "The Number has 1 Digit";
+    }
+    else if (no < 100) {
+        cout << "The Number has 2 Digits";
+    }
+    else if (no < 1000) {
+        cout << "The Number has 3 Digits";
+    }
+    else {
+        cout << "The Number has 4 Digits";
+    }
+    
+    return 0;
+}
