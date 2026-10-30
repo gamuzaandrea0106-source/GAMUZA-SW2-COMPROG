@@ -1,0 +1,44 @@
+#include <iostream>
+using namespace std;
+
+int main ()
+{
+    float no1, no2, result;
+    char opt;
+    
+    cout << "Please Enter 2 Numbers: ";
+    cin >> no1 >> no2;
+    cout << "\n";
+    
+    cout << "SELECTION OF ARITHMETIC OPERATORS\n";
+    cout << "(+, -, *, /)\n";
+    cout << "Please Enter an Operator: ";
+    cin >> opt;
+    cout << "\n";
+    
+    switch (opt) {
+        case '+':
+        result = no1 + no2;
+        break;
+        
+        case '-':
+        result = no1 - no2;
+        break;
+        
+        case '*':
+        result = no1 * no2;
+        break;
+        
+        case '/':
+        result = no1 / no2;
+        break;
+        
+        default:
+        cout << "Invalid Operator.";
+        return 0;
+    }
+    
+    cout << "The result of the operation is: " << result;
+
+    return 0;
+}
